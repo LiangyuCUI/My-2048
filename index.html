@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rush 2048</title>
+    <h3 class="gametitle">My 2048</h3><div><img src="cat.png" class="logo"></img></div>
+        <p class="game-explanation">
+            <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+          </p>
+          <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+        <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="Games">
+        <!-- le 2048 sera inséré ici -->
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="Base2048.js"></script>
+    <script type="text/javascript">
+        $(function()
+        {
+            $('.Games').game2048(); // appel de la fonction 'game2048' du pluggin appliquée à la div de class 'Games'
+        });
+    </script>
+</body>
+</html>
